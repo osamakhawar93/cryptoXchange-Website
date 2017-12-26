@@ -157,7 +157,7 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
     color:#222222;
 }
 
-black{
+.black{
     color:black;
 }
 
@@ -307,7 +307,7 @@ black{
     padding-top:45px;
 }
 
-.get-started{
+.get-started-btn{
     background-image: -moz-linear-gradient( 90deg, rgb(80,199,180) 1%, rgb(74,225,174) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(80,199,180) 1%, rgb(74,225,174) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(80,199,180) 1%, rgb(74,225,174) 100%);
@@ -464,6 +464,7 @@ black{
 
 #three-steps{
     margin-top:180px;
+    min-height: 700px;
 }
 
 .number{
@@ -592,6 +593,9 @@ black{
     margin:100px 0;
 }
 
+#buttons-contact{
+    margin:50px 0;
+}
 #news-blog{
     background:#e2ecea;
     min-height: 927px;
@@ -821,14 +825,13 @@ black{
 }
 
 .buy-section{
-    display:none;
     position: relative;
 }
 
 
 .margined{
-    margin-top:120px;
-    margin-bottom:30px;
+    margin-top:90px;
+    margin-bottom:25px;
 }
 
 .grey{
@@ -1160,6 +1163,7 @@ black{
 .righty-floaters,.bitmix{
     position: absolute;
     right: 0;
+    top:100px;
 }
 
 .xrp-left img{
@@ -1261,6 +1265,7 @@ article {
     color:white !important;
     text-align: center;
     margin:35px 0;
+    position: relative;
 }
 
 
@@ -1275,7 +1280,76 @@ article {
  
 }
 
+.contact-form-div{
+    height:520px;
+    background-image: url(../images/sub-back.png);
+    background-size:cover;
+    width:100%;
+    padding:75px;
+    margin:60px auto;
+}
 
+
+.contact-form-div .form-group{
+    text-align: left;
+}
+
+.custom-inputs{
+    height:60px;
+    border-radius: 0;
+    background: white;
+    border:none;
+    font-family: 'mont-light';
+    font-size:16px;
+}
+
+.message-row{
+    margin-top:20px;
+}
+
+.custom-area{
+    height:175px !important;
+    padding-top:30px;
+}
+
+.send-contact{
+    height:80px;
+    border:none;
+    background:black;
+    color:white;
+    font-size:26px;
+    width: 340px;
+    margin-top: 42px;
+}
+
+.get-started-inner-contact{
+    padding-top: 270px;
+    width: 365px;
+    margin: 0 auto;
+}
+
+.get-started-in-contact{
+    background-image: url(../images/getstarted.png);
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 653px;
+    position:relative;
+}
+
+.signup-different{
+    background-image: url(../images/sub-back.png);
+}
+
+.contact-form{
+    position: absolute;
+    width: 65%;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 /*  styles for background color, etc; not necessary for this thing to work  */
 
 
@@ -1301,12 +1375,40 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .smart1{
         bottom: 360px;
     }
+
+    .contact-section{
+        width: 450px !important;
+        position: absolute !important;
+    }
 }   
 
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1){
+
+    .xrp-left{
+        z-index: 2;
+    }
+
+    .righty-floaters, .bitmix{
+        z-index: 2;
+    }
+
+    .contact-form{
+        width:90%
+    }
+
+    .get-started-inner {
+        padding-top: 235px !important;
+    }
+
+    .contact-section{
+        width: 100%;
+        position: relative;
+        height: 350px;
+    }
+
     .macbook{
         width:100%;
         text-align: center;
@@ -1325,6 +1427,7 @@ and (-webkit-min-device-pixel-ratio: 1){
         padding-right:0;
     }
 
+    
     .chart img{
         width:600px;
     }
@@ -1336,7 +1439,7 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
 
     .payment-method{
-        height:750px;
+        height: 880px;
     }
 
     .cash{
@@ -1488,6 +1591,25 @@ and (-webkit-min-device-pixel-ratio: 1){
 
 
 @media only screen and (min-width: 641px) and (max-width: 767px){
+
+        .contact-form{
+            width:90%;
+        }
+
+        .get-started-inner-contact {
+            padding-top: 400px;
+        }
+
+        .contact-form-div {
+            height: 745px;
+        }
+
+        .contact-section{
+            width: 100%;
+            position: relative;
+            height: 350px;
+        }
+        
         .content-head{
             width:auto;
         }
@@ -1604,7 +1726,43 @@ and (-webkit-min-device-pixel-ratio: 1){
         }
 }   
 @media only screen and (max-width: 640px){
-    
+
+        .contact-form-div{
+            padding:10px;
+            height: 680px;
+        }
+        .get-started-in-contact{
+            height: 800px;
+        }
+        .get-started-inner-contact{
+            padding-top:400px;
+            width: 100%;
+
+        }
+
+        .send-contact{
+            width:100%;
+        }
+
+        .contact-form{
+            width: 90%;
+        }
+
+        .get-started{
+            padding:30px;
+        }
+
+        .get-started-inner{
+            padding-top:100px !important;
+        }
+        .contact-section{
+            width: 100%;
+            position: relative;
+            height: 350px;
+        }
+        .xrp-left,.bitmix{
+            display: none;
+        }
         .header-text-block{
             width: 88%;
             margin:0 auto;
@@ -1630,7 +1788,7 @@ and (-webkit-min-device-pixel-ratio: 1){
             font-size:20px;
         }
 
-        .get-started{
+        .get-started-btn{
             width:90%;
             margin:50px auto;
         }
