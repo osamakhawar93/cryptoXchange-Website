@@ -1174,8 +1174,9 @@ black{
     width:140px;
 }
 
-.faqs{
-    display:none;
+.faq-heading{
+    margin-top:100px;
+    margin-bottom:100px;
 }
 
 .top-50{
@@ -1271,7 +1272,7 @@ article {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    display:none;
+ 
 }
 
 
