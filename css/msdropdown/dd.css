@@ -52,8 +52,8 @@ img.fnone{float:none !important}
 .dd .ddTitle .ddTitleText .ddTitleText{padding:0;}
 .dd .ddTitle .description{font-size:12px; color:#666}
 .dd .ddTitle .ddTitleText img{padding-right:5px;margin-top: -7px;}
-.dd .ddChild{border:1px solid #c3c3c3; background-color:#fff; left:-1px;}
-.dd .ddChild li{padding:5px; background-color:#fff; border-bottom:1px solid #c3c3c3;}
+.dd .ddChild{border:none; background-color:#fff; left:-1px;margin-top: 32px;}
+.dd .ddChild li{    height: 40px;padding:5px; background-image: -webkit-linear-gradient( 90deg, rgb(80,199,180) 1%, rgb(74,225,174) 100%); padding-left: 20px;border-bottom:1px solid #c3c3c3;}
 .dd .ddChild li .description{color:#666;}
 .dd .ddChild li .ddlabel{color:white;}
 .dd .ddChild li.hover{background-color:#f2f2f2}

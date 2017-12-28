@@ -119,6 +119,10 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
     padding:0;
 }
 
+li>a:hover,a{
+    text-decoration: none !important;
+}
+
 .navbar-nav>li>a{
     line-height: 4;
 }
@@ -333,7 +337,7 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
 .smart1{
     position: absolute;
     left: 310px;
-    bottom: -94px;  
+    top: 500px;  
 }
 
 .smart1 img{
@@ -475,6 +479,12 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
     text-align: center;
     position: relative;
 }
+
+.activeClass{
+    box-shadow: 0px 10px 43px 0px rgba(16, 10, 25, 0.1);
+    border: 2px solid #53cab5;
+}
+
 .arrow-div{
     position: absolute;
 
@@ -878,8 +888,8 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
     padding:75px 40px;
 }
 
-.buy-list li a img{
-    margin-right: 30px;
+.buy-list li img{
+    margin-right: 15px;
 }
 
 .buy-list li a{
@@ -890,12 +900,18 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
 }
 
 .buy-list li{
+    cursor: pointer;
     list-style-type:none;
     display: inline-block;
     width:24%;
     margin-bottom:50px;
     transition: border 0.2s;
     padding:20px 28px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size:15px;
+    font-weight: 600;
+    color:black;
     
 }
 
@@ -916,6 +932,7 @@ a,p,span,label,h1,h2,h3,h4,li,ul{
     padding: 0px 0px;
     margin-right: 25px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .payment-list li:hover{
@@ -1387,6 +1404,8 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1){
 
+    
+
     .xrp-left{
         z-index: 2;
     }
@@ -1569,7 +1588,11 @@ and (-webkit-min-device-pixel-ratio: 1){
 
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
-    
+
+        .nav>li>a{
+            padding: 10px 10px;
+        }
+
         .macbook {
             text-align: center;
         }
@@ -1591,6 +1614,15 @@ and (-webkit-min-device-pixel-ratio: 1){
 
 
 @media only screen and (min-width: 641px) and (max-width: 767px){
+
+        .login-reg, .navbar-right li, .inside-header, #myNavbar{
+            z-index: 25;
+        }
+
+
+        .navbar-nav{
+            margin: 16.5px -15px;
+        }
 
         .contact-form{
             width:90%;
@@ -1727,6 +1759,18 @@ and (-webkit-min-device-pixel-ratio: 1){
 }   
 @media only screen and (max-width: 640px){
 
+        .login-reg, .navbar-right li, .inside-header, #myNavbar{
+            z-index: 25;
+        }
+
+
+        .navbar-nav{
+            margin: 16.5px -15px;
+        }
+
+        .login-reg, .navbar-right li, .inside-header, #myNavbar{
+            z-index: 25;
+        }
         .contact-form-div{
             padding:10px;
             height: 680px;
